@@ -1,0 +1,469 @@
+/* font-family: 'Staatliches', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Cardo', serif;
+dark blue -- #0E3B62
+logo blue -- #296C9F
+light blue -- #86B3D8
+light green -- #688f74*/
+/* */
+
+
+
+/* OVERALL */
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	margin-bottom: 0rem;
+	font-family: 'Staatliches', cursive;
+	text-align: center;
+	font-size: 4rem;
+	color: #688f74;
+}
+/* END OVERALL */
+
+
+
+/* HEADER */
+header {
+	padding: .5rem;
+	background: url(../img/bg-img.jpg);
+	background-color: #688f74;
+}
+
+header .rwd-menu a {
+	font-family: 'Staatliches', cursive;
+	font-size: 2rem;
+	background: none;
+	color: #fff;
+}
+
+header .rwd-menu a:hover {
+	background: none;
+	color: #0E3B62;
+}
+
+header .rwd-menu a:focus {
+	background: #296C9F;
+	color: #fff;
+}
+
+a.menu-link {
+	float: right;
+	display: block;
+	font-size: 2rem;
+	color: #fff;
+}
+
+a.menu-link:hover {
+	float: right;
+	display: block;
+	color: #0E3B62;
+}
+
+nav {
+	clear: both;
+	overflow: hidden;
+	max-height: 0;
+}
+
+nav.active {
+	max-height: 15em;
+}
+
+.rwd-menu {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+}
+
+.rwd-menu li a {
+	display: block !important;
+}
+		
+@media screen and (min-width: 830px) {
+	a.menu-link {
+		display: none;
+	}
+
+	nav {
+		max-height: none;
+	}
+
+	.rwd-menu {
+		margin: 0 0 0 -0.25em;
+	}
+
+	.rwd-menu li {
+		display: inline-block;
+		margin: 0 0.25em;
+	}
+}
+
+@media screen and (min-width: 40em) {
+	header .rwd-menu a {
+		padding: 0em 1rem 0rem 1rem;
+	}
+}
+
+@media screen and (min-width: 64em) {
+	header .rwd-menu a {
+		padding: 1rem;
+	}
+}
+/* END HEADER */
+
+
+
+/* HERO */
+.hero {
+	padding: 0;
+	background-color: #296C9F;
+	background: url(../img/hero.jpg);
+}
+
+.hero h1 {
+	padding: 1rem 2rem;
+	font-size: 3rem;
+	line-height: 1;
+	color: #0E3B62;
+}
+
+.hero p {
+	margin-bottom: 0rem;
+	padding: 0rem 2rem 1.25rem 2rem;
+	font-size: 1.2rem;
+	text-align: center;
+	color: #fff;
+}
+
+@media screen and (min-width: 40em) {
+	.hero h1 {
+		font-size: 4rem;
+	}
+
+	.hero p {
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (min-width: 64em) {
+	.hero h1 {
+		font-size: 5rem;
+	}
+
+	.hero p {
+		font-size: 1.5rem;
+	}
+}
+/* END HERO */
+
+
+
+/* EXPLORE */
+.explore {
+	padding-top: 2rem;
+	padding-bottom: 3rem;
+	background-color: #0E3B62;
+}
+
+.explore h1 {
+	line-height: 1;
+}
+
+.explore p {
+	padding-bottom: 1rem;
+	text-align: center;
+	font-size: 1.125rem;
+	color: #fff;
+}
+
+/* -- title tabs -- */
+.tabs-title a {
+	font-size: 1rem;
+	color: #fff;
+}
+
+.tabs-title > a:focus,
+.tabs-title > a[aria-selected="true"] {
+	background-color: #86B3D8;
+	color: #0E3B62;
+}
+
+.tabs-title a:hover {
+	background-color: rgba(0,0,0,.2);
+	color: #fff;
+}
+
+/* -- content tabs -- */
+.explore h2 {
+	font-family: 'Staatliches', cursive;
+	font-size: 3.5rem;
+	color: #0E3B62;
+}
+
+.tabs {
+	border: none;
+	background-color: #296C9F;
+}
+
+.tabs-content {
+	border: none;
+	background-color: #86B3D8;
+}
+
+.tabs-content p {
+	text-align: left;
+	font-size: 1.25rem;
+	color: #0E3B62;
+}
+
+.tabs-content ul,
+.tabs-content li a {
+	font-size: 1rem;
+	color: #0E3B62;
+}
+
+.tabs-content li a:hover {
+	font-size: 1rem;
+	color: #fff;
+}
+/* END EXPLORE */
+
+
+
+/* LODGING */
+.lodging {
+	padding: 2rem 0;
+	background-color: #296C9F;
+	text-align: center;
+	color: #fff;
+}
+
+.lodging h1 {
+	margin-bottom: 0;
+	line-height: 1;
+	color: #86B3D8;
+}
+
+.lodging p {
+	padding-bottom: 1rem;
+	margin-bottom: 1;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.125rem;
+	color: #fff;
+}
+
+.lodging h2 {
+	margin-top: 0.5rem;
+	margin-bottom: 0;
+	font-family: 'Staatliches', cursive;
+	font-size: 1.5rem;
+	color: #fff;
+}
+
+.lodging h3 {
+	margin-bottom: 1rem;
+	text-align: center;
+	font-size: 1.125rem;
+	color: #fff;
+}
+
+.lodging a {
+	text-align: center;
+	color: #fff;
+}
+
+.lodging a:hover {
+	text-align: center;
+	color: #86B3D8;
+}
+
+@media screen and (min-width: 64em) {
+	.lodging h3 {
+		margin-bottom: 0rem;
+	}
+}
+/* END LODGING */
+
+
+
+/* TESTIMONIALS */
+.testimonials {
+	padding: 3rem 0;
+	background: url(../img/federico-bottos.jpg);
+	background-color: #296C9F;
+	font-family: 'Cardo', serif;
+	font-size: 1.2rem;
+	color: #fff;
+}
+
+blockquote {
+	border: none;
+}
+
+blockquote p {
+	color: #fff;
+}
+
+.orbit-bullets {
+	margin: 0;
+}
+
+.orbit-bullets button {
+	width: .75rem;
+	height: .75rem;
+}
+
+@media screen and (min-width: 40em) {
+	.testimonials {
+		padding: 6rem 0;
+		font-size: 1.875rem;
+	}
+}
+
+@media screen and (min-width: 64em) {
+	.testimonials {
+		padding: 6rem 0;
+		font-size: 1.875rem;
+	}
+}
+/* END TESTIMONIALS */
+
+
+
+/* LEARN MORE */
+.learnmore {
+	padding: 2rem 0;
+	font-size: 1rem;
+	background-color: #0E3B62;
+	color: #fff;
+}
+
+.learnmore label {
+	font-size: 1rem;
+	color: #fff;
+}
+
+.learnmore button {
+	margin-bottom: 0rem;
+	padding: .5rem;
+	font-family: 'Staatliches', cursive;
+	font-size: 1.5rem;
+	background-color: #296C9F;
+	color: #fff;
+}
+
+.learnmore button:hover {
+	background-color: #86B3D8;
+	color: #fff;
+}
+
+.reveal {
+	margin: auto;
+	width: 60%;
+	border: 5px solid #0E3B62;
+	background-color: #296C9F;
+	color: #fff;
+}
+
+.reveal h1 {
+	font-size: 2rem;
+	color: #0E3B62;
+}
+
+.reveal p {
+	font-size: 1rem;
+	text-align: center;
+}
+
+.close-button {
+	color: #fff;
+}
+
+.close-button:hover {
+	color: #0E3B62;
+}
+
+@media screen and (min-width: 40em) {
+	.reveal {
+		padding: 1.5rem;
+	}
+
+	.reveal h1 {
+		font-size: 3rem;
+	}
+
+	.reveal p {
+		font-size: 1rem;
+		text-align: left;
+	}
+}
+
+@media screen and (min-width: 64em) {
+	.reveal {
+		padding: 1.5rem;
+	}
+
+	.reveal h1 {
+		font-size: 4rem;
+	}
+
+	.reveal p {
+		font-size: 1.125rem;
+		text-align: left;
+	}
+}
+/* END LEARN MORE */
+
+
+
+/* FOOTER */
+footer {
+	padding: 1.5rem;
+	background: url(../img/bg-img.jpg);
+	background-color: #688f74;
+}
+
+footer p {
+	margin: .5rem;
+	text-align: center;
+	color: #fff;
+}
+
+footer .menu a {
+	text-align: center;
+	font-family: 'Staatliches', cursive;
+	font-size: 1.5rem;
+	background: none;
+	color: #fff;
+}
+
+footer .menu a:hover {
+	background: none;
+	color: #0E3B62;
+}
+
+footer .menu a:focus {
+	background: #296C9F;
+	color: #fff;
+}
+
+@media screen and (min-width: 40em) {
+	footer p {
+		margin-bottom: .5rem;
+		text-align: center;
+	}
+
+	footer .menu a {
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 64em) {
+	footer p {
+		text-align: left;
+	}
+}
+/* END FOOTER */
