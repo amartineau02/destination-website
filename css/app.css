@@ -32,6 +32,15 @@ header {
 	background-color: #688f74;
 }
 
+header .menu-link {
+	width: 100%;
+	text-align: center;
+}
+
+header li {
+	text-align: center;
+}
+
 header .rwd-menu a {
 	font-family: 'Staatliches', cursive;
 	font-size: 2rem;
@@ -75,19 +84,24 @@ nav.active {
 .rwd-menu {
 	margin: 0;
 	padding: 0;
-	text-align: right;
 }
 
 .rwd-menu li a {
 	display: block !important;
+	width: 100%;
 }
-		
-@media screen and (min-width: 830px) {
-	a.menu-link {
-		display: none;
+
+@media screen and (min-width: 64em) {
+	header .menu-link {
+		display:none;
+	}
+
+	header .rwd-menu a {
+		padding: 1rem;
 	}
 
 	nav {
+		text-align: right;
 		max-height: none;
 	}
 
@@ -98,18 +112,6 @@ nav.active {
 	.rwd-menu li {
 		display: inline-block;
 		margin: 0 0.25em;
-	}
-}
-
-@media screen and (min-width: 40em) {
-	header .rwd-menu a {
-		padding: 0em 1rem 0rem 1rem;
-	}
-}
-
-@media screen and (min-width: 64em) {
-	header .rwd-menu a {
-		padding: 1rem;
 	}
 }
 /* END HEADER */
@@ -180,6 +182,11 @@ nav.active {
 }
 
 /* -- title tabs -- */
+.tabs-title {
+	width: 50%;
+	text-align: center;
+}
+
 .tabs-title a {
 	font-size: 1rem;
 	color: #fff;
@@ -450,14 +457,18 @@ footer .menu a:focus {
 	color: #fff;
 }
 
+footer .grid-x .cell:last-child li {
+	width: 100%;
+}
+
 @media screen and (min-width: 40em) {
 	footer p {
 		margin-bottom: .5rem;
 		text-align: center;
 	}
 
-	footer .menu a {
-		text-align: center;
+	footer .grid-x .cell:last-child li a {
+		text-align: right;
 	}
 }
 
@@ -465,5 +476,13 @@ footer .menu a:focus {
 	footer p {
 		text-align: left;
 	}
+}
+
+.reveal {
+	transform: translateY(-50%);
+	height: auto;
+	min-height: auto;
+	top: 50% !important;
+	padding: 3rem;
 }
 /* END FOOTER */
